@@ -11,5 +11,11 @@ export class StartTextDetectionRequestDto {
     type: 'string',
     default: 'test-video.mp4',
   })
-  videoName: string;
+  name: string;
+
+  @ApiProperty({
+    type: 'string',
+    default: 'Video',
+  })
+  type: string;
 }
