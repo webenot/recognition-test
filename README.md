@@ -22,3 +22,12 @@
 
 - click `Allow` and select created role for `Unauthenticated role`
 - click `Save changes`
+
+## Usefull links
+[https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartTextDetection.html](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StartTextDetection.html)
+[https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetTextDetection.html](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetTextDetection.html)
+[https://www.npmjs.com/package/@aws-sdk/client-rekognition](https://www.npmjs.com/package/@aws-sdk/client-rekognition)
+[https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html](https://docs.aws.amazon.com/cognito/latest/developerguide/identity-pools.html)
+[https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/rekognition/estimate-age-example/src](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/rekognition/estimate-age-example/src)
+[https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Rekognition.html](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Rekognition.html)
+[https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html)
