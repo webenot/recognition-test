@@ -23,14 +23,35 @@ export class AwsRekognitionService {
     });
   }
 
-  public async startTextDetection(bucketName: string, videoName: string): Promise<StartTextDetectionCommandOutput> {
+  public async startTextDetection(
+    bucketName: string,
+    name: string,
+    type = 'Video'
+  ): Promise<StartTextDetectionCommandOutput> {
+    console.log(type);
     return new Promise((resolve, reject) => {
-      this.recognition.startTextDetection(
+      if (type === 'Video') {
+        this.recognition.startTextDetection(
+          {
+            Video: {
+              S3Object: {
+                Bucket: bucketName,
+                Name: name,
+              },
+            },
+          },
+          (error, data) => {
+            if (error) reject(error);
+            else resolve(data);
+          }
+        );
+      }
+      this.recognition.detectText(
         {
-          Video: {
+          Image: {
             S3Object: {
               Bucket: bucketName,
-              Name: videoName,
+              Name: name,
             },
           },
         },

@@ -16,7 +16,7 @@ export class AppController {
 
   @Get('start-text-detection')
   async startTextDetection(@Query() input: StartTextDetectionRequestDto): Promise<StartTextDetectionCommandOutput> {
-    return this.awsRecognitionService.startTextDetection(input.bucketName, input.videoName);
+    return this.awsRecognitionService.startTextDetection(input.bucketName, input.name, input.type);
   }
 
   @Get('get-text-detection')
